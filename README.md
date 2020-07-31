@@ -1,8 +1,11 @@
 # Online-Learning-vs-Batch-Learning
-Comparing the accuracy of online learning and batch learning
+Comparing the accuracy of Online Learning and Batch Learning
+
+# What is Online Learning
+Online Learning is a model training technique that gives the model the training data one sample at a time instead of the whole batch to fit which is what Batch Learning does. Online Learning has some advantages over Batch Learning such as if the training data is too huge to fit into memory to be able to train the model in one run, or if the model is preferred to predict data based on the most recent information.
 
 # Project Aim
-This project aims to compare the accuracy between online learning and batch learning.
+This project aims to compare the accuracy between Online Learning and Batch Learning to see how much accuracy will differ between the 2 different training methods.
 
 # Methodology
 There will be 3 datasets and 3 different classifiers to perform the tests on.
