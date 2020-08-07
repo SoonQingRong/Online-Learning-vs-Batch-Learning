@@ -31,5 +31,27 @@ The first random shuffle that occured in the K-Fold argument was so that the tes
 
 The second random shuffle that occured after splitting the data in each iterations of the fold was so that the order the model would be learning the train data would be random as well. This is especially important for online learning models as these learning methods place greater emphasis on data that it was trained on near the later stage of its learning and some datasets (e.g. Iris dataset) arranges data whose labels are the same close to each other and that the model will overfit on that particular training class if given a huge amount of train data on that particular class consecutively. Shuffling the train indexes will randomise the order in which train data will be given to the model for online learning which will reduce biasedness.
 
+# Results using SGD Classifier
+
+Iris Dataset | Breast Cancer Dataset | Digits Dataset
+------------ | --------------------- | --------------
+SGD Classifier Model 1: 67.3% | SGD Classifier Model 1: 62.9% | SGD Classifier Model 1: 88.3%
+SGD Classifier Model 2: 59.3% | SGD Classifier Model 2: 61.5% | SGD Classifier Model 1: 76.1%
+SGD Classifier Model 3: 83.3% | SGD Classifier Model 3: 86.3% | SGD Classifier Model 3: 95.1%
+
+# Results using Perceptron
+Iris Dataset | Breast Cancer Dataset | Digits Dataset
+------------ | --------------------- | --------------
+Perceptron Model 1: 67.3% | Perceptron Model 1: 62.9% | Perceptron Model 1: 88.1%
+Perceptron Model 2: 59.3% | Perceptron Model 2: 61.5% | Perceptron Model 2: 76.3%
+Perceptron Model 3: 68.7% | Perceptron Model 3: 83.0% | Perceptron Model 3: 95.0%
+
+# Results using Passive Aggressive Classifier
+Iris Dataset | Breast Cancer Dataset | Digits Dataset
+------------ | --------------------- | --------------
+Passive Aggressive Classifier Model 1: 71.3% | Passive Aggressive Classifier Model 1: 75.9% | Passive Aggressive Classifier Model 1: 92.8%
+Passive Aggressive Classifier Model 2: 71.3% | Passive Aggressive Classifier Model 2: 71.8% | Passive Aggressive Classifier Model 2: 85.7%
+Passive Aggressive Classifier Model 3: 86% | Passive Aggressive Classifier Model 3: 88.4% | Passive Aggressive Classifier Model 3: 95.4%
+
 # Conclusion
 Batch learning models generally perform better than models using online learning based on the average accuracy across all 10 folds for all 3 datasets and all 3 different classifiers.
